@@ -1,6 +1,6 @@
 /******************************************************************************
 prog01.cs
-Calculating number pi according to Leibnitz formula.
+Calculating number pi according to Leibnitz and Euler formulas.
 *******************************************************************************/
 using System;
 class NumberPi {
