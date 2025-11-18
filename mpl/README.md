@@ -21,6 +21,3 @@ def prime(n):
 ```
 In this loop we go to the half of n.
 
-
-
-
