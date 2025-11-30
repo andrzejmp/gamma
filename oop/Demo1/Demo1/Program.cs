@@ -1,7 +1,59 @@
-﻿internal class Program
+﻿//The concepts of OOP in C#
+using System;
+namespace OOP_in_Csharp
 {
-    private static void Main(string[] args)
+    class Computer
     {
-        Console.WriteLine("Hello, World!");
+        public string _BIOSname;
+        public string _ipadress;
+        public string _OS;
+
+        public Computer(string bn, string ip, string os)
+        {
+            _BIOSname = bn;
+            _ipadress = ip;
+            _OS = os;
+        }
+    }
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            Computer comp1 = new("alfa", "10.0.0.23", "Windows 11");
+            Console.WriteLine("{0}, {1}, {2}" , comp1._BIOSname, comp1._ipadress, comp1._OS);
+        }
     }
 }
+
+
+
+
+/*
+
+           Computer[] net = new Computer[4];
+
+           for (int i = 0; i < net.Length; i++)
+           {
+               net[i] =
+                 new Computer("comp" + i.ToString(),
+                       "10.0." + getNum() + "." + getNum(), "Win10");
+           }
+
+           for (int i = 0; i < net.Length; i++)
+           {
+               Console.WriteLine("{0} {1}", net[i]._BIOSname, net[i]._ipadress);
+           }
+
+           */
+
+/*
+  static string getNum()
+        {
+            Random random = new Random();
+            int num;
+            num = random.Next(1, 255);
+            return num.ToString();
+        }
+  
+  
+ */
